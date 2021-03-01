@@ -1,1 +1,82 @@
-Coucou
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>TP01</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="mx-auto">
+                <h1 class="title">
+                    Formulaire
+                </h1>
+            </div>
+            <form class="w-75 mx-auto mt-5 p-3 border">
+                <div class="form-group">
+                    <label for="lName">Nom</label>
+                    <input type="text" class="form-control" id="lName" pattern="/^[a-zA-Z]{3,16}$/" placeholder="Nom">
+                    <small id="lNameHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="fName">Prénom</label>
+                    <input type="text" class="form-control" id="fName" pattern="/^[a-zA-Z]{3,16}$/" placeholder="Prénom">
+                    <small id="fNameHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="Address">Adresse</label>
+                    <input type="text" class="form-control" id="Address" placeholder="Adresse">
+                    <small id="AddressHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="PostCode">Code Postal</label>
+                    <input type="text" class="form-control" id="PostCode" pattern="^(\d.*){5}$"  placeholder="Code Postal">
+                    <small id="PostCodeHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="City">Ville</label>
+                    <input type="text" class="form-control" id="City" pattern="^[a-zA-Z \-]{1,30}$"placeholder="Ville">
+                    <small id="CityHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Téléphone</label>
+                    <input type="tel" class="form-control" id="Phone" pattern="^\+?(\d.*){10}$" placeholder="Téléphone">
+                    <small id="PhoneHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="Sexe">Civilité</label>
+                    <select class="form-control" id="Sexe">
+                        <option selected>...</option>
+                        <option value="1">Mr</option>
+                        <option value="2">Mme</option>
+                    </select>
+                    <small id="SexeHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Adresse Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Adresse Email">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="Login">Compte</label>
+                    <input type="text" class="form-control" id="Login" placeholder="Compte">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Mot de passe</label>
+                    <input type="password" class="form-control" id="Password" placeholder="Mot de passe">
+                </div>
+                <div class="form-group">
+                    <label for="PasswordValidation">Valider le mot de passe</label>
+                    <input type="password" class="form-control" id="PasswordValidation" placeholder="Mot de passe">
+                </div>
+                <div class="text-center">
+                    <input type="submit" id="submit" class="btn btn-primary mt-2" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
