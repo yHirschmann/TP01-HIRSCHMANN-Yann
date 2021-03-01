@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/TP01-HIRSCHMANN-Yann",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "YH",
+      "email": "yann.hirschmann@hotmail.com"
+    }
+  ],
+  "require": {
+  }
+}
